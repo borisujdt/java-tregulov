@@ -8,5 +8,6 @@ public class Test1 {
         System.out.println("ghjikl");
 
         System.out.println();
+        System.out.println();
     }
 }
