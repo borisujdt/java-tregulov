@@ -1,16 +1,23 @@
 package homeworks.hm5;
 
 public class BankAccount1 {
-    int id;
-    String name;
-    double balance;
+    int id = 10;
+    String name = "Petr";
+    double balance = 100;
 
-    void popolnenieSheta(double summa) {
-        balance += summa;
+    void popolnenieSheta(double summaPopolneniya){
+        System.out.println("Balans do popolneniya: "+balance);
+        System.out.println("Balans popolnyaetsya na; "+summaPopolneniya);
+        balance += summaPopolneniya;
+        System.out.println("Balans posle popolneniya: "+balance);
+        System.out.println();
     }
 
-    void snyatieSoSheta(double summa) {
-        balance -= summa;
+    void snyatieSoSheta(double summaSnyatiya){
+        System.out.println("Balans do snyatiya: "+balance);
+        System.out.println("Balans umenshaetsya na; "+summaSnyatiya);
+        balance -= summaSnyatiya;
+        System.out.println("Balans posle snyatiya: "+balance);
     }
 
 }
@@ -19,27 +26,8 @@ class BankAccount1Test {
     public static void main(String[] args) {
 
         BankAccount1 myAccount = new BankAccount1();
-        BankAccount1 yorAccount = new BankAccount1();
-        BankAccount1 hisAccount = new BankAccount1();
 
-        myAccount.id = 1;
-        myAccount.name = "Zaur";
-        myAccount.balance = 12.35;
         myAccount.popolnenieSheta(200.5);
-
-        yorAccount.id = 2;
-        yorAccount.name = "Mike";
-        yorAccount.balance = 2.00;
-        yorAccount.popolnenieSheta(230.77);
-
-        hisAccount.id = 3;
-        hisAccount.name = "Ivan";
-        hisAccount.balance = 124.10;
-        hisAccount.snyatieSoSheta(50.00);
-
-        System.out.println(myAccount.balance);
-        System.out.println(yorAccount.balance);
-        System.out.println(hisAccount.balance);
-
+        myAccount.snyatieSoSheta(150.2);
     }
 }
