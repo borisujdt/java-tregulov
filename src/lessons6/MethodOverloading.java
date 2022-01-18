@@ -1,14 +1,24 @@
 package lessons6;
 
 public class MethodOverloading {
-    void showInti(int i1){
+    void show(int i1){
         System.out.println(i1);
+        System.out.println("Data Type is int");
     }
-    void showBoolean(boolean b1){
+    void show(boolean b1){
+
         System.out.println(b1);
+        System.out.println("Data Type is boolean");
     }
-    void showString(String s1){
+    void show(String s1){
         System.out.println(s1);
+        System.out.println("Data Type is String");
+    }
+    void show(String s, int a){
+        System.out.println("String: "+s+" "+"int: "+a);
+    }
+    void show(int a, String s){
+        System.out.println("Kakoy xoroshiy den!!!");
     }
 }
 
@@ -16,10 +26,12 @@ class MethodOverloadingTest{
     public static void main(String[] args) {
         MethodOverloading mO = new MethodOverloading();
         int a = 500;
-        mO.showInti(a);
+        mO.show(a);
         boolean b = true;
-        mO.showBoolean(b);
+        mO.show(b);
         String s = "privet";
-        mO.showString(s);
+        mO.show(s);
+        mO.show("privet", 10);
+        mO.show(10, "privet");
     }
 }
