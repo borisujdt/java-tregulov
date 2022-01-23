@@ -1,4 +1,4 @@
-package lessons6;
+package lessons.lessons6;
 
 public class MethodOverloading2 {
 

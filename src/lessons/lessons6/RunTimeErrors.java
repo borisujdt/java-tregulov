@@ -1,4 +1,4 @@
-package lessons6;
+package lessons.lessons6;
 
 public class RunTimeErrors {
     public static void main(String[] args) {
