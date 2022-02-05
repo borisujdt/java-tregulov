@@ -27,13 +27,6 @@ public class Student3 {
     Student3(){
 
     }
-
-
-    void showinfo(){
-        System.out.println("Средняя оценка студента: " + name + " " + surname + " = " + (averageGradeInMathematics
-                + averageGradeInEconomics + averageGradeInAForeignLanguage)/3);
-    }
-
 }
 class StudentTest {
     static void averageOcenka(Student3 student){
