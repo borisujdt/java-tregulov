@@ -1,4 +1,4 @@
-package lessons.lessons6;
+package lessons.lesson6;
 
 public class Test1 {
     int sum(int a,int b,int c){
