@@ -12,7 +12,7 @@ public class Car2 {
         speed -= skorost;
         return speed;
     }
-    void showinfo(){
+    public void showinfo(){
         System.out.println("cvet: "+color+" motor: "+engine+" skorost: "+speed);
     }
 }
