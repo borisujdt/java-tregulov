@@ -18,10 +18,10 @@ public class Class1 {
 
         System.out.println(umnojenie(10,5,20));
         delenie(10,3);
+        delenie(50,17);
 
     }
-
-    
 }
+
 
 
