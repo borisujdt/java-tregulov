@@ -1,18 +1,23 @@
 package lessons.lesson12;
 
 public class Test10 {
-    public static void main(String[] args) {
-        int salary = 600;
 
-        if (salary < 200) {
-            System.out.println("Z/P ochen nizka");
-        } else if (salary < 400) {
-            System.out.println("Z/P srednego razmera");
-        } else if (salary < 600) {
-            System.out.println("Z/P visokaya");
-        } else {
-            System.out.println("Z/P otlichnaya");
+    void  maximum(int i1, int i2, int i3) {
+        if (i1 > i2 && i1 > i3) {
+            System.out.println("Maximum - "+i1);
+        }
+        else if (i2>i1 && i2>i3) {
+            System.out.println("Maximum - "+i2);
+        }
+        else {
+            System.out.println("Maximum - "+i3);
+        }
+    }
+
+    public static void main(String[] args) {
+        Test10 t = new Test10();
+        t.maximum(4,7,0);
+
         }
 
-    }
 }
