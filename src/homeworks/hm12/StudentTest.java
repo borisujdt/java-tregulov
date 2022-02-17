@@ -7,7 +7,7 @@ public class StudentTest {
         Student st1 = new Student("Ivan", 3, 9.5);
         Student st2 = new Student("Igor", 2, 7.5);
         Student st3 = new Student("Igor", 2, 7.0);
-//        higherRating(st3, st2);
+        higherRating(st3, st2);
         analysisRating(st3,st2);
     }
 
