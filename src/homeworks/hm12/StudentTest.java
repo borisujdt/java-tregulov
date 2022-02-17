@@ -13,7 +13,7 @@ public class StudentTest {
 
     public static void higherRating(Student st1, Student st2) {
 
-        if (st1.name == st2.name && st1.course == st2.course && st1.grade == st2.grade) {
+        if (st1.name.equals(st2.name)  && st1.course == st2.course && st1.grade == st2.grade) {
 
             System.out.println("Studenti ravni");
         } else {
@@ -22,17 +22,17 @@ public class StudentTest {
     }
 
     public static void analysisRating(Student st1, Student st2) {
-        if (st1.name == st2.name) {
+        if (st1.name.equals(st2.name)) {
             if (st1.course == st2.course){
 
                 if (st1.grade == st2.grade){
 
                     System.out.println("Studenti ravni!!!");
                 }else {
-                    System.out.println("U studentov raznie ocenki");
+                    System.out.println("U studentov imena i course odinakovie, no raznie ocenki");
                 }
             }else {
-                System.out.println("U studentov raznie course");
+                System.out.println("U studentov imena odinakovie, no raznie course");
             }
         } else {
             System.out.println("U studentov razniya imena");
