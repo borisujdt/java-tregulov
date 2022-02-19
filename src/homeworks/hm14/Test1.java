@@ -4,15 +4,18 @@ public class Test1 {
     public static void time() {
         OUTER:
         for (int hour = 0; hour <= 5; hour++) {
-            INNER:
+            MIDDLE:
             for (int minute = 0; minute <= 59; minute++) {
-
+                if (hour > 1 && minute % 10 == 0) {
+                    break OUTER;
+                }
+                INNER:
                 for (int seconds = 0; seconds <= 59; seconds++) {
+                    if (seconds * hour > minute)
+                        continue MIDDLE;
+
                     System.out.println(hour + ":" + minute + ":" + seconds);
-                    if (hour > 1 && minute % 10 == 0 && minute > 0) {
-                        break OUTER;
-                    }
-                    if (seconds * hour > 60) continue INNER;
+
                 }
             }
 
