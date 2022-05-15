@@ -8,6 +8,5 @@ public class Lesson25 {
         dog.bark();
         dog.showName();
 
-
     }
 }
